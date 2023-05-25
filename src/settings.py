@@ -106,3 +106,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+''' -------------------------------------------------- '''
+
+
+JAZZMIN_SETTINGS = {
+    'site_title': 'MyFolio'
+
+}

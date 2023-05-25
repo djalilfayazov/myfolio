@@ -5,6 +5,9 @@ class Project(Model):
 	project_img = ImageField('Image', upload_to='projects/')
 	project_body = TextField('Description')
 
+	project_time = IntegerField('Time', default=0)
+	project_price = FloatField('Time', default=0)
+
 	project_date = DateTimeField('Date and Time', auto_now_add=True)
 
 	def __str__(self):
