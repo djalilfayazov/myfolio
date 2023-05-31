@@ -16,3 +16,14 @@ class Project(Model):
 	class Meta:
 		verbose_name = 'Project'
 		verbose_name_plural = 'Projects'
+
+class Certificate(Model):
+	title = CharField('Title', max_length=512)
+	img = ImageField('Image', upload_to='certificates/')
+
+	def __str__(self) -> str:
+		return self.title
+	
+	class Meta:
+		verbose_name = 'Certificate'
+		verbose_name_plural = 'Certificates'

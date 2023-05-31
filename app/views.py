@@ -6,6 +6,8 @@ def index(request):
 	return render(
 		request, 'index.html', {
 			'project_count': Project.objects.count(),
-			'projects': Project.objects.all()
+			'projects': Project.objects.all(),
+
+			'certs': Certificate.objects.all()
 		}
 	)
