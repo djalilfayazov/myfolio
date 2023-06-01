@@ -17,6 +17,6 @@ def index(request):
 			'exp': (dt.now()  - dt(2021, 9, 22)).days,
 
 			'bd': int(int((dt.now()  - dt(2008, 9, 26)).days) / 365.25)
-		
+
 		}
 	)
